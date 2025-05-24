@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janne Riikonen - Online Resume</title>
+    <style>
+        /* Basic CSS for a clean, professional look */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+        }
+        ul li::before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+        .job-title, .degree {
+            font-weight: bold;
+            color: #34495e;
+        }
+        .company-location, .university-location {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        .dates {
+            float: right;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        /* NEW CSS ADDED HERE to reduce space between date lines */
+        .dates p {
+            margin: 0; /* Remove default top and bottom margin of paragraphs */
+            line-height: 1.2; /* Adjust line height for closer spacing */
+        }
+        /* END NEW CSS */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #e0f2f7;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            color: #2980b9;
+        }
+        .projects-link {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .projects-link a {
+            display: inline-block;
+            background-color: #2ecc71; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .projects-link a:hover {
+            background-color: #27ae60;
+        }
+        /* Style for the profile image if you choose to include it */
+        .profile-pic-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            width: 150px; /* Adjust size as needed */
+            height: 150px;
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover;
+            border: 3px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Janne Riikonen</h1>
+        <div class="contact-info">
+            <p>Lappeenranta | 06.06.1998 | <a href="mailto:janneriikonen0@gmail.com">janneriikonen0@gmail.com</a> | <a href="https://www.linkedin.com/in/janne-riikonen-748122180/" target="_blank">LinkedIn</a></p>
+        </div>
+    </header>
+
+    <section>
+        <h2>PROFILE</h2>
+        <p>Experience of quality from wide range of EIA. I hope to find a job in which I can combine my passion for data, programming, and electrification. I like learning things and I believe one of my key strengths is the ability to digest new information.</p>
+    </section>
+
+    <section>
+        <h2>EXPERIENCE</h2>
+
+        <div class="experience-item">
+            <div class="dates">5.2023 – present</div>
+            <p class="job-title">EIA-DESIGNER</p>
+            <p class="company-location">Granlund Oy | Lappeenranta</p>
+            <ul>
+                <li>EIA modernization projects </li>
+                <li>Field instrumentation and cabinet design, commissioning </li>
+                <li>Substation secondary design projects </li>
+                <li>Short circuit calculations and relay settings </li>
+                <li>Substation switching operation design </li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="dates">
+                <p>4.2022 – 4.2023</p>
+                <p>& 4.2021 – 9.2021</p>
+            </div>
+            <p class="job-title">EIA-SUPERVISOR</p>
+            <p class="company-location">Kemira Chemicals Oy | Lappeenranta</p>
+            <ul>
+                <li>Supervision of electricians and automation technicians </li>
+                <li>Instrument and automation system maintenance work </li>
+                <li>Shutdown resource planning </li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="dates">11.2021 – 01.2022</div>
+            <p class="job-title">ELECTRICAL NETWORK DESIGNER</p>
+            <p class="company-location">Asset Vision Oy | Lappeenranta</p>
+            <ul>
+                <li>Distribution network design </li>
+                <li>Timble NIS Medium and Low voltage design </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>EDUCATION</h2>
+        <div class="education-item">
+            <div class="dates">2018-2023</div>
+            <p class="degree">MSc in Technology, Electrical</p>
+            <p class="university-location">LUT-university | Lappeenranta, Finland</p>
+            <ul>
+                <li>Grids and markets -major, Business Economics -minor. </li>
+                <li>GPA: 4,17/5, with honors </li>
+                <li>Thesis work: "Teollisuusverkon 500 ja 400 V Jakelujännitteiden Vertailu Case Kemira Chemicals Kuusankosken tehtaat". Grade: 5/5 </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>PROGRAM EXPERIENCE & CERTIFICATES</h2>
+        <h3>Programs/Software:</h3>
+        <div class="skills-list">
+            <span class="skill-item">ABB DOC </span>
+            <span class="skill-item">Trimble NIS </span>
+            <span class="skill-item">CADMATIC -schematic design </span>
+            <span class="skill-item">Siemens SIMATIC STEP 7 </span>
+            <span class="skill-item">In Touch </span>
+            <span class="skill-item">LOGO! programming </span>
+            <span class="skill-item">Valmet DNA </span>
+            <span class="skill-item">SAP ERP </span>
+            <span class="skill-item">M-FILES use </span>
+        </div>
+        <h3>Programming & Query Languages:</h3>
+        <div class="skills-list">
+            <span class="skill-item">SQL queries </span>
+            <span class="skill-item">MATLAB </span>
+            <span class="skill-item">Python </span>
+            <span class="skill-item">Excel -programming </span>
+        </div>
+        <h3>Certificates & Licenses:</h3>
+        <div class="skills-list">
+            <span class="skill-item">Occupational safety </span>
+            <span class="skill-item">SFS6002 </span>
+            <span class="skill-item">Live working <1kV </span>
+            <span class="skill-item">Hot work certificate </span>
+            <span class="skill-item">FRC emergency first aid </span>
+            <span class="skill-item">B-driver's licence active </span>
+        </div>
+    </section>
+
+    <section>
+        <h2>HOBBIES</h2>
+        <ul>
+            <li>Studying housing and stock markets </li>
+            <li>Chairman of housing company board </li>
+            <li>Football at competitive amateur level </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>LANGUAGES</h2>
+        <ul>
+            <li>Finnish: Native </li>
+            <li>English: Excellent </li>
+            <li>German: Basics </li>
+            <li>Swedish: Basics </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>RECOMMENDATIONS</h2>
+        <p>Jukka Lassila, LUT professor, CEO Asset Vision Oy. Contact information when asked. </p>
+    </section>
+
+    <div class="projects-link">
+        <p>Want to see more of my work?</p>
+        <a href="projects.html">View My Projects</a>
+    </div>
+
+</body>
+</html>
