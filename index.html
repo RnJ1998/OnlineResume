@@ -17,6 +17,14 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        header { /* Added for flex layout */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .header-text-content { /* Wrapper for text in header */
+            flex-grow: 1; /* Allows text content to take up available space */
+        }
         h1, h2 {
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
@@ -24,14 +32,14 @@
             margin-top: 25px;
         }
         h1 {
-            text-align: center;
+            text-align: left; /* Changed for header layout */
             font-size: 2.5em;
             margin-bottom: 10px;
             border-bottom: none;
         }
         .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
+            text-align: left; /* Changed for header layout */
+            margin-bottom: 20px; /* This provides space below the header text block */
             font-size: 0.9em;
             color: #555;
         }
@@ -119,13 +127,16 @@
         /* Style for the profile image if you choose to include it */
         .profile-pic-container {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 0; /* Adjusted for header placement */
+            margin-left: 20px; /* Reduced space to move picture a bit to the left */
+            flex-shrink: 0; /* Prevent image container from shrinking */
         }
         .profile-pic {
-            width: 150px; /* Adjust size as needed */
-            height: 150px;
+            width: 140px; /* Adjusted size for header */
+            height: 140px;
             border-radius: 50%; /* Makes it circular */
-            object-fit: cover;
+            object-fit: cover; /* Ensures the image covers the area, might crop */
+            object-position: 50% 15%; /* Adjusts image position; 50% horizontal (center), 55% vertical (slightly down) */
             border: 3px solid #3498db;
         }
     </style>
@@ -133,9 +144,14 @@
 <body>
 
     <header>
-        <h1>Janne Riikonen</h1>
-        <div class="contact-info">
-            <p>Lappeenranta | 06.06.1998 | <a href="mailto:janneriikonen0@gmail.com">janneriikonen0@gmail.com</a> | <a href="https://www.linkedin.com/in/janne-riikonen-748122180/" target="_blank">LinkedIn</a></p>
+        <div class="header-text-content">
+            <h1>Janne Riikonen</h1>
+            <div class="contact-info">
+                <p>Lappeenranta | 06.06.1998 | <a href="mailto:janneriikonen0@gmail.com">janneriikonen0@gmail.com</a> | <a href="https://www.linkedin.com/in/janne-riikonen-748122180/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="profile-pic-container">
+            <img src="image.JPG" alt="Janne Riikonen" class="profile-pic">
         </div>
     </header>
 
