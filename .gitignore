@@ -1,5 +1,5 @@
 # Ignore all JPEG image files
-*.jpg
+#*.jpg
 
 # Ignore all text files
 *.txt
