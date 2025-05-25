@@ -1,0 +1,5 @@
+# Ignore all JPEG image files
+*.jpg
+
+# Ignore all text files
+*.txt
