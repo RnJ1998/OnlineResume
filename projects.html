@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Projects</title>
+    <title>Janne Riikonen - Projects</title>
     <style>
-        /* Basic CSS for the projects page, similar to resume */
+        /* Basic CSS for a clean, professional look - Adapted from index.html */
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -17,73 +17,103 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h1, h2 {
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 { /* Page Title */
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 { /* Section Titles (Asiakasyritys X / Category) */
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
-            margin-top: 25px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            border-bottom: none;
-        }
-        .project-item {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 5px;
+            margin-top: 30px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
-        .project-item h3 {
+        h3 { /* Project Titles */
             color: #34495e;
             margin-top: 0;
+            margin-bottom: 5px;
         }
-        .project-item p {
-            margin-bottom: 10px;
+        section { /* Container for projects under one H2 */
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
         }
-        .project-item ul {
-            list-style: disc;
-            margin-left: 20px;
+        ul { /* For lorem ipsum bullet points */
+            list-style: none;
             padding: 0;
-            color: #555;
-        }
-        .project-item .tech-stack {
-            font-size: 0.9em;
-            color: #7f8c8d;
             margin-top: 10px;
         }
-        .project-links a {
-            display: inline-block;
-            background-color: #3498db; /* Blue button */
-            color: white;
-            padding: 8px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-right: 10px;
-            transition: background-color 0.3s ease;
+        ul li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 20px;
         }
-        .project-links a:hover {
-            background-color: #2980b9;
+        ul li::before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        .project-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .project-date {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .project-tech {
+            font-size: 0.9em;
+            margin-top: 15px; /* Added a bit more space above tech after moving */
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .project-tech strong {
+            color: #34495e;
+        }
+        .tech-tag {
+            background-color: #e0f2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: #2980b9;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
         }
         .back-link {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #ddd;
         }
         .back-link a {
             display: inline-block;
-            background-color: #95a5a6; /* Grey button */
+            background-color: #3498db;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            font-weight: bold;
         }
         .back-link a:hover {
-            background-color: #7f8c8d;
+            background-color: #2980b9;
         }
     </style>
 </head>
@@ -94,51 +124,135 @@
     </header>
 
     <section>
+        <h2>Client Company 1</h2>
         <div class="project-item">
-            <h3>Project Title 1: E-commerce Platform</h3>
-            <p>Developed a full-stack e-commerce platform with user authentication, product catalog, shopping cart, and payment integration.</p>
+            <h3>Process Section Modernization, Electrical/Automation Design Changes</h3>
+            <p class="project-date">2023-</p>
             <ul>
-                <li>Implemented secure user registration and login.</li>
-                <li>Designed a robust product database schema.</li>
-                <li>Integrated Stripe API for payment processing.</li>
-                <li>Deployed on AWS EC2 using Docker.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
             </ul>
-            <p class="tech-stack"><strong>Tech Stack:</strong> Python (Django), PostgreSQL, HTML, CSS, JavaScript (React), Docker, AWS</p>
-            <div class="project-links">
-                <a href="#" target="_blank">Live Demo</a>
-                <a href="#" target="_blank">GitHub Repo</a>
-            </div>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
         </div>
-
         <div class="project-item">
-            <h3>Project Title 2: Data Analysis Dashboard</h3>
-            <p>Created an interactive web dashboard to visualize and analyze large datasets from sensor readings.</p>
+            <h3>Maintenance Work Planning</h3>
+            <p class="project-date">2023-</p>
             <ul>
-                <li>Developed data processing scripts in Python.</li>
-                <li>Utilized Pandas and Matplotlib for data manipulation and visualization.</li>
-                <li>Built a Flask application for the web interface.</li>
-                <li>Features include dynamic filtering and real-time updates.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
             </ul>
-            <p class="tech-stack"><strong>Tech Stack:</strong> Python (Flask, Pandas, Matplotlib), HTML, CSS, D3.js</p>
-            <div class="project-links">
-                <a href="#" target="_blank">Live Demo</a>
-                <a href="#" target="_blank">GitHub Repo</a>
-            </div>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
         </div>
-
         <div class="project-item">
-            <h3>Project Title 3: Simple Python Game</h3>
-            <p>A small command-line based game developed to practice Python fundamentals.</p>
+            <h3>Commissioning Work</h3>
+            <p class="project-date">2024-</p>
             <ul>
-                <li>Implemented game logic and user input handling.</li>
-                <li>Focused on clean code and modular design.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
             </ul>
-            <p class="tech-stack"><strong>Tech Stack:</strong> Python</p>
-            <div class="project-links">
-                <a href="#" target="_blank">GitHub Repo</a>
-            </div>
+            <p class="project-tech"><strong>Technologies:</strong> N/A</p>
         </div>
+    </section>
 
+    <section>
+        <h2>Client Company 2</h2>
+        <div class="project-item">
+            <h3>Railway Bridge Control Modernization</h3>
+            <p class="project-date">2023-2024</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
+        </div>
+        <div class="project-item">
+            <h3>Railway Bridge Control Modernization</h3>
+            <p class="project-date">2024-2025</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Client Company 3</h2>
+        <div class="project-item">
+            <h3>Maintenance and Modernization Works</h3>
+            <p class="project-date">2023-</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
+        </div>
+        <div class="project-item">
+            <h3>Process Section Logic Integration</h3>
+            <p class="project-date">2024-2025</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">SIMATIC STEP7</span><span class="tech-tag">InTouch</span><span class="tech-tag">CADMATIC</span></p>
+        </div>
+        <div class="project-item">
+            <h3>New Process Section Electrical Automation Design</h3>
+            <p class="project-date">2024</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Client Company 4</h2>
+        <div class="project-item">
+            <h3>Maintenance and Modernization Works</h3>
+            <p class="project-date">2023-</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Client Company 5</h2>
+        <div class="project-item">
+            <h3>Process Sections Electrical Automation Design</h3>
+            <p class="project-date">2024</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">CADMATIC</span></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Medium Voltage Switchgear, Substation Secondary Design</h2>
+        <div class="project-item">
+            <h3>Client Company 6, Switchgear Modernization</h3>
+            <p class="project-date">Date TBD</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">ABB DOC</span><span class="tech-tag">CADMATIC</span><span class="tech-tag">M-FILES</span></p>
+        </div>
+        <div class="project-item">
+            <h3>Client Company 7, New Switchgear Procurement</h3>
+            <p class="project-date">Date TBD</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">ABB DOC</span><span class="tech-tag">CADMATIC</span><span class="tech-tag">M-FILES</span></p>
+        </div>
     </section>
 
     <div class="back-link">

@@ -1,0 +1,41 @@
+Asiakasyritys 1
+Prosessiosan modernisointi, Sähkö/automaatio suunnitelmamuutokset, 2023- (tech: CADMATIC)
+
+Kunnossapitotöiden suunnittelu, 2023- (tech: CADMATIC)
+
+Käyttöönottotyöt 1v, 2024-
+
+
+
+Asiakasyritys 2
+
+Ratasillan ohjausten modernisointi, 2023-2024 (tech: CADMATIC)
+
+Ratasillan ohjausten modernisointi, 2024-2025 (tech: CADMATIC)
+
+ 
+
+Asiakasyritys 3
+
+Kunnossapito- ja modernisointitöitä, 2023- (tech: CADMATIC)
+
+Prosessiosan logiikkojen yhdistys, 2024-2025 (tech: SIMATIC STEP7, InTouch, CADMATIC)
+
+Uuden prosessiosan sähköautomaatio-suunnittelu, 2024 (tech: CADMATIC)
+
+
+
+Asiakasyritys 4
+
+Kunnossapito- ja modernisointitöitä, 2023- (tech: CADMATIC)
+
+ 
+
+Asiakasyritys 5
+
+Prosessiosien sähköautomaatiosuunnittelu, 2024 (tech: CADMATIC)
+
+
+Keskijännitekojeistot, sähköasema toisiosuunnittelu
+Asiakasyritys 6, Kojeiston modernisointi (tech: ABB DOC, CADMATIC, M-FILES)
+Asiakasyritys 7, Uuden kojeiston hankinta (tech: ABB DOC, CADMATIC, M-FILES)
