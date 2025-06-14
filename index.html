@@ -144,6 +144,14 @@
             object-position: 50% 15%; /* Adjusts image position; 50% horizontal (center), 55% vertical (slightly down) */
             border: 3px solid #3498db;
         }
+        /* Style for links within section list items */
+        section ul li a {
+            color: #3498db; /* Matches the contact-info link color */
+            text-decoration: none; /* Removes underline by default */
+        }
+        section ul li a:hover {
+            text-decoration: underline; /* Adds underline on hover */
+        }
     </style>
 </head>
 <body>
@@ -227,7 +235,7 @@
                 <li>Electricity Grids and Markets -major </li>
                 <li>Business Economics -minor </li>
                 <li>GPA: 4,17/5, with honors </li>
-                <li>Thesis work: "Teollisuusverkon 500 ja 400 V Jakelujännitteiden Vertailu Case Kemira Chemicals Kuusankosken tehtaat". Grade: 5/5 </li>
+                <li>Thesis work: "<a href="https://urn.fi/URN:NBN:fi-fe2023040434888" target="_blank">Teollisuusverkon 500 ja 400 V Jakelujännitteiden Vertailu Case Kemira Chemicals Kuusankosken tehtaat</a>" Grade: 5/5 </li>
             </ul>
         </div>
     </section>
@@ -271,8 +279,8 @@
         <h2>Hobbies</h2>
         <ul>
             <li>Studying housing and stock markets </li>
-            <li>Programming little projects of interest (check out the page below) </li>
-            <li>Football at competitive amateur level </li>
+            <li>Programming little projects of interest (Check "View Hobby Creations" page below) </li>
+            <li>Football at competitive amateur level (<a href="https://tulospalvelu.palloliitto.fi/person/91315/player/seasons" target="_blank">Link to player profile at Palloliitto.fi</a>)</li>
         </ul>
     </section>
 
@@ -294,7 +302,8 @@
     <div class="projects-link">
         <p>Want to see more of my work?</p>
         <a href="projects.html">View Professional Projects</a>
-        <a href="hobbies.html">View Hobby Creations</a> <!-- New Button Added Here -->
+        <a href="hobbies.html">View Hobby Creations</a>
+        <a href="academic_projects.html">View Academic Projects</a>
     </div>
 
 </body>
