@@ -129,11 +129,26 @@ silktideCookieBannerManager.updateCookieBannerConfig({
             margin-bottom: 8px; /* Reduced margin */
             border-bottom: none;
         }
+        .tagline {
+            font-size: 1.1em;
+            color: #7f8c8d; /* A slightly lighter, more subtle color */
+            margin-top: -5px; /* Pull it up closer to the h1 */
+            margin-bottom: 15px; /* Add some space before the contact info */
+            margin-left: 2px; /* Small indent to align nicely */
+        }
         .contact-info {
-            text-align: left; /* Changed for header layout */
-            margin-bottom: 15px; /* Reduced margin */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px; /* space between items */
+            align-items: center;
+            padding-top: 5px; /* Add a little space from the name */
             font-size: 0.9em;
             color: #555;
+        }
+        .contact-info span, .contact-info a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px; /* space between icon and text */
         }
         .contact-info a {
             color: #3498db;
@@ -141,6 +156,11 @@ silktideCookieBannerManager.updateCookieBannerConfig({
         }
         .contact-info a:hover {
             text-decoration: underline;
+        }
+        .contact-info svg {
+            width: 16px;
+            height: 16px;
+            fill: #555; /* Icon color */
         }
         section {
             margin-bottom: 15px; /* Reduced margin */
@@ -251,8 +271,20 @@ silktideCookieBannerManager.updateCookieBannerConfig({
     <header>
         <div class="header-text-content">
             <h1>Janne Riikonen</h1>
-            <div class="contact-info">
-                <p>Lappeenranta | 06.06.1998 | <a href="mailto:janneriikonen0@gmail.com">janneriikonen0@gmail.com</a> | <a href="https://www.linkedin.com/in/janne-riikonen-748122180/" target="_blank">LinkedIn</a></p>
+            <p class="tagline">Electrical Engineer & Technology Enthusiast</p>
+             <div class="contact-info">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.976 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.274 1.765 11.842 11.842 0 00.757.433.62.62 0 00.28.14l.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" clip-rule="evenodd" /></svg>
+                    Lappeenranta, Finland
+                </span>
+                <a href="mailto:janneriikonen0@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" /><path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" /></svg>
+                    janneriikonen0@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/janne-riikonen-748122180/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+                    LinkedIn
+                </a>
             </div>
         </div>
         <div class="profile-pic-container">
@@ -348,7 +380,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
         <h3>I/O Systems & Control Platforms:</h3>
         <div class="skills-list">
             <span class="skill-item">Valmet, Siemens, WAGO, ABB, Honeywell, Schneider -I/O design</span>
-            <span class="skill-item">SIMATIC STEP 7 / TIA Portal</span>
+            <span class="skill-item">TIA Portal</span>
             <span class="skill-item">InTouch HMI</span>
             <span class="skill-item">LOGO!</span>
             <span class="skill-item">Valmet DNA (use experience)</span>
@@ -379,7 +411,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
         <h2>Hobbies</h2>
         <ul>
             <li>Studying housing and stock markets </li>
-            <li>Programming little projects of interest (Check "View Hobby Creations" page below) </li>
+            <li>Programming little projects of interest ("View Hobby Creations" below) </li>
             <li>Football at competitive amateur level (<a href="https://tulospalvelu.palloliitto.fi/person/91315/player/seasons" target="_blank">Link to player profile at Palloliitto.fi</a>)</li>
         </ul>
     </section>
